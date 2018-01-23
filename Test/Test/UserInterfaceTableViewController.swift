@@ -17,7 +17,7 @@ class UserInterfaceTableViewController: UITableViewController {
 
         self.dataSource = NSMutableArray.init()
         
-        let items  = ["登录注册"]
+        let items  = ["登录"]
         self.dataSource .addObjects(from: items)
     }
 
@@ -38,7 +38,7 @@ class UserInterfaceTableViewController: UITableViewController {
         return self.dataSource.count
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-       return "布局"
+       return "基础业务"
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
